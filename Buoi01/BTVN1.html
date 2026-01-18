@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lists</title>
+</head>
+<body>
+    <p>Ordered lists can be very simple</p>
+    <div style="border: solid 3px orange; width: 150px;">
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </div>
+
+    <p>Ordered lists can have a variety of types</p>
+    <div style="border: solid 3px #45b562; width: 190px; background-color: #bae6c5;">
+        <ol type="a"> 
+            <li>Lowercase letters</li> 
+        </ol> 
+        <ol type="A" start="2"> 
+            <li>Uppercase letters</li> 
+        </ol> 
+        <ol type="i" start="3"> 
+            <li>Lowercase Roman numerals</li> 
+        </ol> 
+        <ol type="I" start="4"> 
+            <li>Uppercase Roman numerals</li> 
+        </ol> 
+        <ol type="1" start="5"> 
+            <li>Arabic numerals</li> 
+        </ol>
+    </div>
+    <p>Ordered lists can start at different values and with different types.</p>
+    <div style="border: solid 3px #3167cc; width: 300px; background-color: #7fa4eb;">
+        <ol type="a" start="10"> 
+            <li>This should be j</li> 
+        </ol>
+        <ol type="a" start="3"> 
+            <li>
+                This should be c
+                <ol type="1">
+                    <li>Lists can nest</li>
+                    <ol type="1">
+                        <li>Nesting depth is unlimited</li>
+                    </ol>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
