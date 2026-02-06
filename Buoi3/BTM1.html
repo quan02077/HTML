@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="username">Tên đăng nhập:</label></td>
+                <td><input type="text" name="username" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Mật khẩu:</label></td>
+                <td><input type="text" name="password" /></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Giới tính:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" /> Nam <br />
+                    <input type="radio" name="gender" value="Nu" /> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <fieldset>
+                        <legend>Chọn một trong các thông tin</legend>
+                        <label for="country">Quốc gia:</label>
+                        <select name="country">
+                            <option value="vn">Việt Nam</option>
+                            <option value="us">Hoa kỳ</option>
+                            <option value="arg">Argentina</option>
+                            <option value="por">Bồ Đào Nha</option>
+                        </select>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="note">Ghi chú:</label></td>
+                <td><textarea name="note"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="agree" /> Tôi đồng ý với điều khoản
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Đăng ký</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
