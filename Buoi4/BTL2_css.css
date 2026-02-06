@@ -1,0 +1,33 @@
+﻿body {
+}
+header{
+    background-color:#696464;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    height: 50px;
+    font-weight: bold;
+    padding: 10px
+
+}
+main{
+    display: flex;
+}
+nav{
+    padding: 20px;
+    color: purple;
+    width: 300px;
+    background-color: #9d9999
+}
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ccc8c8
+}
+footer{
+    background-color:#696464;
+    color: white;
+    text-align: center;
+    height: 30px;
+    padding: 10px
+}

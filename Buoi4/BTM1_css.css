@@ -1,0 +1,38 @@
+﻿body {
+}
+*{
+    font-size: 12px
+}
+div{
+    border: 1px solid green;
+    width: 1000px
+}
+h1{
+    color: blue;
+    font-weight: bold
+}
+.dong2{
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline
+}
+#noidung{
+    border: solid 2px green;
+    background-color: yellow;
+    text-align: center
+}
+.dong4{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+.dong5{
+    color: blue
+}
+.dong6{
+    color: red
+}
+.ding7{
+    color: green
+}

@@ -1,0 +1,38 @@
+﻿body {
+}
+.container{
+    width: 600px;
+}
+.khung{
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 10px
+}
+#div1{
+    background-color: #f7f596
+}
+#div2{
+    background-image: url(http://localhost:8398/HinhAnh/nen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    margin-left: 115px;
+    color: #f7f596
+}
+#tieude1{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase
+}
+#tieude2{
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase
+}
+p{
+    text-indent: 30px;
+    text-align: justify;
+    margin-left: 20px
+}
