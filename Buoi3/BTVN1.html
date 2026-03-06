@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BTL4</title>
+    </head>
+    <body style="font-family: Arial;">
+        <div style="width: 1000px; margin: 10px; padding: 10px;">
+            <p style="font-size: 20px; margin: 10px;">Chọn địa chỉ nhận hàng</p>
+            <table cellpadding="10">
+                <tr>
+                    <td>
+                        <label style="border:2px solid #ff6a6a; padding:15px 20px; width:280px; height: 50px; display:flex; align-items:center; justify-content:space-between;">
+                            <div>
+                                <img src="HinhAnh/truck.jpg" style="width: 40px;">
+                                <span style="color:#ff3b3b; font-weight:bold;">NHẬN HÀNG TẠI NHÀ</span>
+                            </div>
+                            <input type="radio" name="delivery" />
+                        </label>
+                    </td>
+                    <td>
+                        <label style="border:2px solid #ff3b3b; padding:15px 20px; width:280px; height: 50px;display:flex; align-items:center; justify-content:space-between;">
+                            <div>
+                                <img src="HinhAnh/centre.jpg" style="width: 40px;">
+                                <span style="color:#ff3b3b; font-weight:bold;">NHẬN TẠI TRUNG TÂM</span>
+                            </div>
+                            <input type="radio" name="delivery" />
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Họ và tên<span style="color: red;">(*)</span></legend>
+                            <input type="text" name="fullname"  style="width:100%; height: 30px;"/>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Số điện thoại<span style="color: red;">(*)</span></legend>
+                            <input type="text" name="sdt"  style="width:100%; height: 30px;"/>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Email</legend>
+                            <input type="text" name="email"  style="width:100%; height: 30px;"/>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Tỉnh / Thành phố<span style="color: red;">(*)</span></legend>
+                            <select name="city/province" style="width:100%; height: 30px;">
+                                <option>Chọn Tỉnh / Thành phố của bạn</option>
+                                <option>Hà Nội</option>
+                                <option>Thành phố Hồ Chí Minh</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Quận / Huyện<span style="color: red;">(*)</span></legend>
+                            <select name="quan/huyen" style="width:100%; height: 30px;">
+                                <option>Chọn Quận / Huyện</option>
+                                <option>Bình Tân</option>
+                                <option>Tân Phú</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Phường / Xã<span style="color: red;">(*)</span></legend>
+                            <select name="phuong/xa" style="width:100%; height: 30px;">
+                                <option>Chọn Phường / Xã của bạn</option>
+                                <option>Bình Hưng Hòa</option>
+                                <option>An Lác</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <fieldset style="margin: 10px; width: 640px;">
+                <legend>Số nhà / Tên đường<span style="color: red;">(*)</span></legend>
+                <input type="text" name="diachi"  style="width:635px; height: 30px;"/>
+            </fieldset>
+            <input style="margin: 10px;" type="checkbox" name="suDung"> Sử dụng thông tin này để đăng ký tài khoản mua hàng tại <span style="color: #ff6a6a; font-weight: bold;">Nguyễn Kim</span>
+            <fieldset style="margin: 10px; width: 640px;">
+                <legend>Để lại lời nhắn cho Nguyễn Kim<span style="color: red;">(*)</span></legend>
+                <input type="text" name="ghichu"  style="width:635px; height: 100px;"/>
+            </fieldset>
+            <p style="font-size: 20px; margin: 10px;">Chọn hình thức thanh toán</p>
+            <table cellspacing="10px">
+                <tr>
+                    <td>
+                        <label style="border:2px solid #ff6a6a; padding:15px 20px; width:170px; height: 50px; display:flex; align-items:center; justify-content:space-between;">
+                            <div>
+                                <img src="HinhAnh/vi.jpg" style="width: 40px;">
+                                Thanh toán khi nhận hàng
+                            </div>
+                            <input type="radio" name="pay" />
+                        </label>
+                    </td>
+                    <td>
+                        <label style="border:2px solid #ff6a6a; padding:15px 20px; width:170px; height: 50px; display:flex; align-items:center; justify-content:space-between;">
+                            <div>
+                                <img src="HinhAnh/ATM.jpg" style="width: 40px;">
+                                Thẻ ATM/Internet banking
+                            </div>
+                            <input type="radio" name="pay" />
+                        </label>
+                    </td>
+                    <td>
+                        <label style="border:2px solid #ff6a6a; padding:15px 20px; width:180px; height: 50px; display:flex; align-items:center; justify-content:space-between;">
+                            <div>
+                                <img src="HinhAnh/TinDung.jpg" style="width: 40px;">
+                                Thẻ tín dụng
+                            </div>
+                            <input type="radio" name="pay" />
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <div style="border: solid 1px; margin: 10px; width: 670px;">
+                <input style="margin: 10px;" type="checkbox" name="lapDat"> Bạn muốn sử dụng dịch vụ lắp đặt 
+            </div>
+            <div style="border: solid 1px; margin: 10px; width: 670px;">
+                <input style="margin: 10px;" type="checkbox" name="thoaThuan"> Tôi đồng ý <u style="color: #ff6a6a;">thỏa thuận bảo mật và chính sách mua hàng</u>
+            </div>
+            <div style="border: solid 1px; margin: 10px; width: 670px;">
+                <input style="margin: 10px;" type="checkbox" name="hoaDon"> Yêu cầu xuất hóa đơn GTGT cho đơn hàng này
+            </div>
+            <button style="background-color: #ff6a6a; color: white; margin: 10px; width: 670px; height: 50px; font-size: 20px; font-weight: bold;">THANH TOÁN</button>
+        </div>
+    </body>
+</html>

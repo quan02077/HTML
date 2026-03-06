@@ -1,0 +1,38 @@
+﻿body {
+}
+header{
+    background-color: #db81a5;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#tieude{
+    font-weight: bold
+}
+main{
+    display: flex;
+}
+#hue{
+    background-color: #808080;
+    text-align: justify;
+    padding: 10px
+}
+#saigon{
+    background-color: #a8a4a4;
+    text-align: justify;
+    padding: 10px
+}
+#hanoi{
+    background-color: #bebebe;
+    text-align: justify;
+    padding: 10px
+}
+#anh{
+    margin-left: 25px;
+    width: 300px;
+    height: 200px
+}
+footer{
+    background-color: #db81a5;
+    text-align: center;
+}
