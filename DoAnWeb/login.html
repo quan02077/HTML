@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesLogin.css">
+</head>
+<body>
+    <header class="loginHeader">
+        <div class="logo">
+            <img src="hinhAnh/logo.jpg" alt="thuongHieu">
+        </div>
+        <div class="LoiChao">
+            <h1>What's up!</h1>
+        </div>
+    </header>
+    <div class="loginBanner">
+        <img src="hinhAnh/loginBanner.jpg" alt="loginBanner">
+        <div class="title">
+            <h1 id="pageTitle">Đăng nhập</h1>
+        </div>
+    </div>
+    <! Form đăng nhập>
+    <form id="loginForm">
+        <div class="inputField">
+            <img src="hinhAnh/userIcon.png" alt="userIcon">
+            <input type="text" id="username" name="username" required placeholder=" Nhập username hoặc email"> <br>
+            <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
+            <input type="password" id="password" name="password" required placeholder=" Mật khẩu"> <br>
+            <img src="hinhAnh/roleIcon.png" alt="roleIcon">
+            <select id="roleSelection" name="roleSelection" required>
+                <option value="Nhân viên">Nhân viên</option>
+                <option value="Khách hàng">Khách hàng</option>
+            </select> <br>  
+            <button type="button" id="loginBtn" onclick="login()">Đăng nhập</button> <br>
+            <div id="forgotAndRegister">
+            <div>
+                <a href="#" onclick="showRegisterForm()">Đăng ký ngay</a>
+            </div>
+            <div>
+                <a href="#" onclick="showForgotForm()">Quên mật khẩu?</a>
+            </div>
+        </div>
+        </div>
+    </form>
+    <! Form quên mật khẩu>
+    <form id="forgotForm">
+    <div class="inputField">
+        <img src="hinhAnh/userIcon.png" alt="UserIcon">
+        <input type="text" id="forgotUsername" name="username" required placeholder=" Nhập username hoặc email"> <br>
+        
+        <div class="passwordBox" id="passBox">
+            <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
+            <input type="password" id="newPassword" name="newPassword" placeholder=" Mật khẩu mới"> <br>
+            <img src="hinhAnh/comfirmPassword.png" alt="confirmPasswordIcon">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Xác nhận mật khẩu"> <br>
+        </div>
+        
+        <button type="button" id="forgotBtn" onclick="forgotPassword()">Kiểm tra</button> <br>
+        <a href="#" onclick="showLoginForm()" id="backLogin">Quay lại đăng nhập</a>
+    </div>
+</form>
+    <! Form đăng ký>
+    <form id="registerForm">
+        <div class="inputField">
+            <img src="hinhAnh/email.png" alt="emailIcon">
+            <input type="email" id="registerEmail" name="email" required placeholder=" Nhập email"> <br>
+            <img src="hinhAnh/userIcon.png" alt="userIcon">
+            <input type="text" id="registerUsername" name="username" required placeholder=" Nhập username"> <br>
+            <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
+            <input type="password" id="registerPassword" name="password" required placeholder=" Mật khẩu"> <br>
+            <img src="hinhAnh/comfirmPassword.png" alt="confirmPasswordIcon">
+            <input type="password" id="registerConfirmPassword" name="confirmPassword" required placeholder=" Xác nhận mật khẩu"> <br>
+            <img src="hinhAnh/roleIcon.png" alt="roleIcon">
+            <select id="registerRoleSelection" name="roleSelection" required>
+                <option value="Nhân viên">Nhân viên</option>
+                <option value="Khách hàng">Khách hàng</option>
+            </select> <br> 
+            <button type="button" id="registerBtn" onclick="register()">Đăng ký</button> <br>
+            <a href="#" onclick="showLoginForm()" id="backLogin">Quay lại đăng nhập</a>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
