@@ -141,7 +141,20 @@ function register(){
     alert('Đăng ký thành công!');
     showLoginForm();
 }
+//Ẩn và hiện mật khẩu
+document.querySelectorAll(".showPass").forEach(function(checkbox){
 
+    checkbox.addEventListener("change", function(){
+
+        const passwords = document.querySelectorAll(".password-field");
+
+        passwords.forEach(function(input){
+            input.type = checkbox.checked ? "text" : "password";
+        });
+
+    });
+
+}); 
 // Nhấn Enter
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {

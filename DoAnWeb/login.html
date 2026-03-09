@@ -29,7 +29,11 @@
             <img src="hinhAnh/userIcon.png" alt="userIcon">
             <input type="text" id="username" name="username" required placeholder=" Nhập username hoặc email"> <br>
             <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
-            <input type="password" id="password" name="password" required placeholder=" Mật khẩu"> <br>
+            <input type="password" id="password" name="password" required placeholder=" Mật khẩu" class="password-field"> <br>
+            <div class="show-password">
+                <input type="checkbox" id="showPass">
+                <label for="showPass" id="textPass">Hiện mật khẩu</label>
+            </div>
             <img src="hinhAnh/roleIcon.png" alt="roleIcon">
             <select id="roleSelection" name="roleSelection" required>
                 <option value="Nhân viên">Nhân viên</option>
@@ -54,9 +58,13 @@
         
         <div class="passwordBox" id="passBox">
             <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
-            <input type="password" id="newPassword" name="newPassword" placeholder=" Mật khẩu mới"> <br>
+            <input type="password" id="newPassword" name="newPassword" placeholder=" Mật khẩu mới" class="password-field"> <br>
             <img src="hinhAnh/comfirmPassword.png" alt="confirmPasswordIcon">
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Xác nhận mật khẩu"> <br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" Xác nhận mật khẩu" class="password-field"> <br>
+            <div class="show-password">
+                <input type="checkbox" id="showPass">
+                <label for="showPass" id="textPass">Hiện mật khẩu</label>
+            </div>
         </div>
         
         <button type="button" id="forgotBtn" onclick="forgotPassword()">Kiểm tra</button> <br>
@@ -71,9 +79,13 @@
             <img src="hinhAnh/userIcon.png" alt="userIcon">
             <input type="text" id="registerUsername" name="username" required placeholder=" Nhập username"> <br>
             <img src="hinhAnh/passwordIcon.png" alt="passwordIcon">
-            <input type="password" id="registerPassword" name="password" required placeholder=" Mật khẩu"> <br>
+            <input type="password" id="registerPassword" name="password" required placeholder=" Mật khẩu" class="password-field"> <br>
             <img src="hinhAnh/comfirmPassword.png" alt="confirmPasswordIcon">
-            <input type="password" id="registerConfirmPassword" name="confirmPassword" required placeholder=" Xác nhận mật khẩu"> <br>
+            <input type="password" id="registerConfirmPassword" name="confirmPassword" required placeholder=" Xác nhận mật khẩu" class="password-field"> <br>
+            <div class="show-password">
+                <input type="checkbox" id="showPass">
+                <label for="showPass" id="textPass">Hiện mật khẩu</label>
+            </div>
             <img src="hinhAnh/roleIcon.png" alt="roleIcon">
             <select id="registerRoleSelection" name="roleSelection" required>
                 <option value="Nhân viên">Nhân viên</option>

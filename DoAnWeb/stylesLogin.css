@@ -99,6 +99,22 @@ body{
     border: 1px solid black;
     cursor: pointer;
 }
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-left: 965px; 
+    gap: 5px;
+}
+#showPass{
+    height: 30px;
+    width: 30px;  
+    accent-color: #1668c7;
+    cursor: pointer;
+}
+#textPass{
+    margin-top: 15px;
+    font-size: 20px;
+}
 #forgotAndRegister {
     display: flex;
     justify-content: space-between;
