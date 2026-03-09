@@ -102,12 +102,12 @@ body{
 .show-password {
     display: flex;
     align-items: center;
-    margin-left: 965px; 
+    margin-left: 965px;     
     gap: 5px;
 }
 #showPass{
-    height: 30px;
-    width: 30px;  
+    height: 20px;
+    width: 20px;  
     accent-color: #1668c7;
     cursor: pointer;
 }

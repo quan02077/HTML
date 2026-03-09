@@ -142,11 +142,12 @@ function register(){
     showLoginForm();
 }
 //Ẩn và hiện mật khẩu
-document.querySelectorAll(".showPass").forEach(function(checkbox){
+document.querySelectorAll("#showPass").forEach(function(checkbox){
 
     checkbox.addEventListener("change", function(){
 
-        const passwords = document.querySelectorAll(".password-field");
+        let form = checkbox.closest("form");
+        let passwords = form.querySelectorAll(".password-field");
 
         passwords.forEach(function(input){
             input.type = checkbox.checked ? "text" : "password";
