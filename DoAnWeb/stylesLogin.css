@@ -3,23 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
 }
-.loginHeader{
+.loginHeader {
     border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
-.loginHeader img{
-    text-align: center;
-    width: 250px;
-    height: 100px;
+
+.loginHeader img {
+    width: 120px;     
+    height: auto;
+    margin-right: 20px; 
 }
-.loginHeader h1{
+
+.loginHeader h1 {
     font-family: "Oswald", sans-serif;
-    text-align: center;
     font-size: 50px;
     color: black;
 }
@@ -27,16 +29,15 @@ body{
     border: 1px solid;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 250px; 
     overflow: hidden;
 }
 
 .loginBanner img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
-
 .title {
     position: absolute;
     top: 50%;
@@ -46,106 +47,141 @@ body{
     font-size: 60px;
     font-weight: bold;
     letter-spacing: 3px;
-     -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px black;
 }
-.inputField{
-    justify-content: center; 
+
+form {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.inputField {
+    width: 100%;
+    max-width: 480px; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
     align-items: center;
-    text-align: center;
-    margin: 10px;
-    position: relative;
 }
-.inputField input{
-    margin-top: 10px;   
+
+.inputField br {
+    display: none; 
+}
+
+.inputField > img, .passwordBox > img {
+    width: 25px;       
+    height: 25px;      
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.inputField input[type="text"],
+.inputField input[type="password"],
+.inputField input[type="email"],
+.inputField select,
+.passwordBox input[type="password"] {
+    width: calc(100% - 40px); 
+    height: 45px;
+    font-size: 16px; 
     border-radius: 5px;
-    width: 400px;
-    height: 50px;
-    font-size: 20px;
+    border: 1px solid #777;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
 }
-.inputField input:focus {
-    border-color: #000;      
-    box-shadow: 0 0 8px #000; 
-    transform: translateY(-2px); 
+
+.inputField input:focus, .inputField select:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px #000;
 }
-#username, #forgotUsername, #password, #newPassword, #confirmPassword{
-    font-size: 20px;
+
+.passwordBox {
+    width: 100%;
+    display: none;
 }
-.inputField img{
-    margin-top: 10px;
-    width: 35px;
-    height: 35px;
+.passwordBox[style*="display: block"] {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.inputField select{
-    width: 400px;
-    height: 40px;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-}
-.inputField button{
-    margin-top: 20px;
-    margin-left: 40px;
-    border-radius: 5px;
-    width: 400px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-.inputField button:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
-}
+
 .show-password {
     display: flex;
     align-items: center;
-    margin-left: 965px;     
-    gap: 5px;
+    width: calc(100% - 40px);
+    margin-left: 40px; 
+    margin-top: 10px;
+    gap: 8px;
 }
-#showPass{
-    height: 20px;
-    width: 20px;  
-    accent-color: #1668c7;
+#showPass {
+    width: 16px;
+    height: 16px;
     cursor: pointer;
+    accent-color: #0394fc;
 }
-#textPass{
-    margin-top: 15px;
-    font-size: 20px;
+#textPass {
+    font-size: 15px;
 }
+
+.inputField button, .passwordBox button {
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.inputField button:hover {
+    background-color: white;
+    color: black;
+}
+
 #forgotAndRegister {
     display: flex;
     justify-content: space-between;
-    width: 400px;       
-    margin-left: 965px;  
-    margin-top: 5px;
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    margin-top: 15px;
 }
 #forgotAndRegister a {
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
     color: black;
 }
+
 #backLogin {
     display: block;
-    margin-top: 5px;
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    margin-top: 15px;
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    margin-left: 285px;
+    text-align: right; 
 }
 .inputField a:hover {
     text-decoration: underline;
-    font-size: 20px;
     font-weight: bold;
 }
-#forgotForm{
-    display: none;
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+        left: 5%;
+    }
+    .loginHeader h1 {
+        font-size: 30px;
+    }
+    .loginHeader img {
+        width: 100px;
+    }
 }
-.passwordBox{
-    display: none;
-}
-#registerForm{
-    display: none;
-}
+
+/* Ẩn các form chưa dùng tới */
+#forgotForm { display: none; }
+#registerForm { display: none; }

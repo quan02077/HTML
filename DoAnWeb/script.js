@@ -201,3 +201,13 @@ if (slides) {
 
     setInterval(autoSlide, 4000);
 }
+
+// --- THÊM TÍNH NĂNG MENU 3 GẠCH Ở ĐÂY ---
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+
+if (mobileMenuBtn && navMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active'); 
+    });
+}
